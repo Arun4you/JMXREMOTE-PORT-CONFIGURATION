@@ -32,3 +32,11 @@ Because the jmxremote.password file contains passwords in clear text, you need t
 On UNIX: Run the command chmod 600 jmxremote.password 
 
 
+Example:
+/opt/grd/Oracle/Middleware/jdk1.6.0_85/jre/lib/management/management.properties
+
+
+add these parameters at the bottom of the file.
+
+com.sun.management.jmxremote.access.file=/opt/grd/CodingPROD/config/jmxremote.access
+com.sun.management.jmxremote.password.file=/opt/grd/CodingPROD/config/jmxremote.password
